@@ -309,6 +309,46 @@ form fieldset.inputs
     font-weight: bold
     border-style: none none solid
 
+.ui-tabs
+  background: #fff
+  border: 1px solid #d3d8dc
+  position: relative
+  margin-bottom: 20px
+  @include section-background
+  @include no-shadow()
+  @include rounded(0)
+.ui-tabs-nav
+  @include section-header
+  background: #f0f4f5
+  color: $panelHeaderBck
+  @include no-shadow()
+  @include rounded(0)
+  text-shadow: none
+  font-weight: bold
+  border-style: none none solid
+  margin: 0
+  padding: 0
+  > li
+    @include no-shadow()
+    @include rounded(0)
+    padding: 0
+    &:first-child a
+      border-left-width: 0px
+      border-top-left-radius: 0px
+      border-bottom-left-radius: 0px
+
+    &:last-child a
+      border-right-width: 0px
+      border-top-right-radius: 0px
+      border-bottom-right-radius: 0px
+    > a
+      border: 1px #d3d8dc
+      border-style: none solid none none
+      line-height: 24px
+.tab-content
+  border: none
+  background: #fff
+
 .attributes_table table th, .attributes_table table td
   padding: 10px 0
   font-family: $skinFontFamily
