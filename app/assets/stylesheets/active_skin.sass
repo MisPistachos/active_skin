@@ -9,6 +9,7 @@ $skinFontFamily: 'Source Sans Pro', sans-serif !default
 $panelHeaderBck: #2c3e50 !default
 $panelHeaderTextColor: #FFFFFF !default
 $skinLogo: #fff image-url("active_skin/default_logo.png") no-repeat 30px 0 !default
+$textColor: #323537 !default
 
 html
   background: #ecf0f1
@@ -217,7 +218,7 @@ table.index_table, table.data_table
     font-weight: bold
   .filter_form_field
     label 
-      color: #95a5a6
+      color: $textColor
       font-weight: normal
       font-size: 13px
       text-transform: uppercase
@@ -260,7 +261,7 @@ form.filter_form a.clear_filters_btn
   @include rounded(0)
   text-shadow: none
   padding: 10px 20px
-  color: #95a5a6
+  color: $textColor
   &:hover
     background: lighten( #ecf0f1, 5% ) !important
 
@@ -352,7 +353,7 @@ form fieldset.inputs
 .attributes_table table th, .attributes_table table td
   padding: 10px 0
   font-family: $skinFontFamily
-  color: #95a5a6
+  color: $textColor
 .attributes_table table th
   font-weight: normal
   font-size: 13px
